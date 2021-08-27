@@ -1,0 +1,2 @@
+# SimplePrefs
+Asset for Unity.
