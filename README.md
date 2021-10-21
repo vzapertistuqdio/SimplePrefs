@@ -11,19 +11,30 @@ Asset for Unity.Simplifies working with PlayerPrefs. You no longer need to monit
  
  --HOW TO USE IT
  
-1)To use, you need to connect  VzapertiStudio namespace - use using VzapertiStudio;
+To use, you need to connect  VzapertiStudio namespace - use using VzapertiStudio;
 
 
 <img width="342" alt="Снимок экрана 2021-08-27 в 20 58 57" src="https://user-images.githubusercontent.com/67166773/131169638-63af5ef9-3452-47f3-80ca-4d50b6b402df.png">
 
-2)Аfter that it is necessary to mark the required variable with the attribute  [PrefsSaver] or  [PrefsSaver(arg)] (different in next descritpion)
+1) PREFS SAVER
+
+It is necessary to mark the required VARIABLE with the attribute  [PrefsSaver] or  [PrefsSaver(arg)] (different in next descritpion)
 
 <img width="342" alt="Снимок экрана 2021-08-27 в 21 02 22" src="https://user-images.githubusercontent.com/67166773/131169979-c01cccbd-d774-40b7-b1b3-337427d1a4d3.png">
 
 <img width="342" alt="Снимок экрана 2021-08-27 в 21 02 00" src="https://user-images.githubusercontent.com/67166773/131170030-1e63c00d-34f1-4bac-83c7-ceb88233284c.png">
 
+2) ROTATION AND POSITION SAVERS
 
---DIFFERENCE BETWEEN ATTRIBUTES  
+It is necessary to mark the required CLASS with the attribute [PositionSave] for save postion and [RotationSave] for save rotation.
+
+<img width="538" alt="Снимок экрана 2021-10-21 в 20 36 17" src="https://user-images.githubusercontent.com/67166773/138328744-13f373d8-7424-4563-a654-7bbb9ca3fa7e.png">
+
+<img width="538" alt="Снимок экрана 2021-10-21 в 20 36 53" src="https://user-images.githubusercontent.com/67166773/138328830-c34ae6fe-df16-4ac7-aa7f-e83c08260199.png">
+
+<img width="538" alt="Снимок экрана 2021-10-21 в 20 37 20" src="https://user-images.githubusercontent.com/67166773/138328876-e7cbbe8e-5e98-4c09-af24-ce8116ac59aa.png">
+
+--DIFFERENCE BETWEEN PREFS SAVER ATTRIBUTES  
 
 If at the first start of the game the variable must be initialized, use this [PrefsSaver (initializedValue)],
 in other cases use this [PrefsSaver] the variable will be initialized to the default value.
