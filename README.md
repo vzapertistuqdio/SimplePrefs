@@ -53,4 +53,6 @@ in other cases use this [PrefsSaver] the variable will be initialized to the def
  
 3)You can disable SimplePrefs.On top panel press VzapertiStudio->SimplePrefsSetting and press on toggle
 
+4)All classes that use attributes from SimplePrefs must have Monobehavior at the root of inheritance.
+
 
