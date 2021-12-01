@@ -34,6 +34,12 @@ It is necessary to mark the required CLASS with the attribute [PositionSave] for
 
 <img width="538" alt="Снимок экрана 2021-10-21 в 20 37 20" src="https://user-images.githubusercontent.com/67166773/138328876-e7cbbe8e-5e98-4c09-af24-ce8116ac59aa.png">
 
+--OBJECTS WHICH SPAWN AFTER SCENE INITIALIZATION
+If the object spawns after initializing the scene and needs the saved data, you can request it. Use this:
+
+<img width="576" alt="Снимок экрана 2021-12-01 в 13 42 52" src="https://user-images.githubusercontent.com/67166773/144220268-32b6aade-ad28-45f6-a5bf-9995a88f4b7a.png">
+
+
 --DIFFERENCE BETWEEN PREFS SAVER ATTRIBUTES  
 
 If at the first start of the game the variable must be initialized, use this [PrefsSaver (initializedValue)],
