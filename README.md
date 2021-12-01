@@ -55,4 +55,6 @@ in other cases use this [PrefsSaver] the variable will be initialized to the def
 
 4)All classes that use attributes from SimplePrefs must have Monobehavior at the root of inheritance.
 
+5)Please use different name for gameobjects which use PrefsSavers,because the save algorithm uses the name
+
 
