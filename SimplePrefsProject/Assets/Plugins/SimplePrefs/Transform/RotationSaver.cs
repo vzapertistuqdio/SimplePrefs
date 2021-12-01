@@ -7,6 +7,7 @@ namespace VzapertiStudio
 {
     public class RotationSaver : MonoBehaviour
     {
+        private List<MonoBehaviour> listOfMonobehs = new List<MonoBehaviour>();
         private void OnApplicationPause(bool pause)
         {
             if (pause)
@@ -32,6 +33,8 @@ namespace VzapertiStudio
                     SaveMonobehRotation(monobeh);
                 }
             }
+            
+            CheckRepeatingName();
         }
 
         private void SaveMonobehRotation(MonoBehaviour monobeh)
@@ -39,6 +42,18 @@ namespace VzapertiStudio
             PlayerPrefs.SetFloat(KeyBuilder.BuildKeyForRotationX(monobeh), monobeh.transform.rotation.eulerAngles.x);
             PlayerPrefs.SetFloat(KeyBuilder.BuildKeyForRotationY(monobeh), monobeh.transform.rotation.eulerAngles.y);
             PlayerPrefs.SetFloat(KeyBuilder.BuildKeyForRotationZ(monobeh), monobeh.transform.rotation.eulerAngles.z);
+        }
+        
+        private void CheckRepeatingName()
+        {
+            for (int i = 0; i < listOfMonobehs.Count; i++)
+            {
+                for (int j = i+1; j < listOfMonobehs.Count; j++)
+                {
+                    if(listOfMonobehs[i].name==listOfMonobehs[j].name)
+                        Debug.LogError("Detect duplicated names of Gameobjects:"+listOfMonobehs[i].name+"."+" Names must be different");
+                }
+            }
         }
     }
 }
